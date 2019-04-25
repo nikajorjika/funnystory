@@ -1,0 +1,69 @@
+@mixin n-margins-x($unit: 'px') {
+  .n-ma-auto{ 
+    margin: auto
+  }
+  .n-ml-auto{ 
+    margin-left: auto;
+  }
+  .n-mr-auto{ 
+    margin-right: auto;
+  }
+  .n-mt-auto{ 
+    margin-top: auto;
+  }
+  .n-mb-auto{ 
+    margin-bottom: auto;
+  }
+  .n-mx-auto{ 
+    margin: 0 auto;
+  }
+  .n-my-auto{ 
+    margin: auto 0;
+  }
+
+  @for $i from 0 through $options {
+      .n-ma-#{$i}{ 
+          margin: #{$i * $multiplier}#{$unit}
+      }
+      .n-ml-#{$i}{ 
+        margin-left: #{$i * $multiplier}#{$unit};
+      }
+      .n-mr-#{$i}{ 
+        margin-right: #{$i * $multiplier}#{$unit};
+      }
+      .n-mt-#{$i}{ 
+        margin-top: #{$i * $multiplier}#{$unit};
+      }
+      .n-mb-#{$i}{ 
+        margin-bottom: #{$i * $multiplier}#{$unit};
+      }
+      .n-mx-#{$i}{ 
+        margin: 0 #{$i * $multiplier}#{$unit};
+      }
+      .n-my-#{$i}{ 
+        margin: #{$i * $multiplier}#{$unit} 0;
+      }
+      .n-pa-#{$i}{ 
+          margin: #{$i * $multiplier}#{$unit}
+      }
+      .n-px-#{$i}{ 
+        margin: 0 #{$i * $multiplier}#{$unit};
+      }
+      .n-py-#{$i}{ 
+        margin: #{$i * $multiplier}#{$unit} 0;
+      }
+      .n-pl-#{$i}{ 
+        margin-left: #{$i * $multiplier}#{$unit};
+      }
+      .n-pr-#{$i}{ 
+        margin-right: #{$i * $multiplier}#{$unit};
+      }
+      .n-pt-#{$i}{ 
+        margin-top: #{$i * $multiplier}#{$unit};
+      }
+      .n-pb-#{$i}{ 
+        margin-bottom: #{$i * $multiplier}#{$unit};
+      }
+  }
+}
+@include n-margins-x

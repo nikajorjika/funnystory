@@ -1,0 +1,20 @@
+
+.n-flex{
+  flex: 1 1 auto;
+  max-width: 100%;
+}
+$columns: 12;
+$options: 5;
+$multiplier: 2;
+
+@mixin n-col-x($unit: '%') {
+  @for $i from 1 through $columns {
+      .n-flex.n-col-#{$i}{ 
+          flex-basis: #{$i / $columns * 100 }#{$unit};
+          flex-grow: 0;
+          max-width:  #{$i / $columns * 100 }#{$unit};
+      }
+  }
+}
+
+@include n-col-x;
