@@ -1,9 +1,13 @@
 <template>
   <div>
     <form action>
-      <n-layout>
+      <n-layout :class="{focused: focused}">
         <n-flex class="n-col-10">
-          <input type="text">
+          <input
+            type="text"
+            @focus="focused = true"
+            @blur="focused = false"
+          >
         </n-flex>
         <n-flex class="n-col-2">
           <button type="submit">{{ $t('Search')}}</button>
@@ -14,19 +18,27 @@
 </template>
 <script>
 export default {
-  name: "SearchComponent"
-};
+  name: 'SearchComponent',
+  data: () => ({
+    focused: false
+  })
+}
 </script>
 
-<style lang="scss" scoped>
+<style
+  lang="scss"
+  scoped
+>
 input {
   width: 100%;
   border: none;
   font-size: 16px;
   padding: 5px;
+  outline: none;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
 button {
   width: 100%;
   border: none;

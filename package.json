@@ -1,5 +1,5 @@
 {
-  "name": "m2galleryfront",
+  "name": "FunnyStory",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "core-js": "^2.6.5",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mocker-data-generator": "^2.6.6",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
     "vue-i18n": "^8.0.0",
@@ -31,7 +34,7 @@
     "babel-jest": "^23.6.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^4.4.2",
     "sass-loader": "^7.1.0",
     "vue-cli-plugin-i18n": "^0.6.0",
     "vue-template-compiler": "^2.5.21"

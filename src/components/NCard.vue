@@ -15,7 +15,7 @@
 <script>
 
 export default {
-  name: "NCardComponent",
+  name: 'NCardComponent',
   props: {
     withDivider: {
       type: Boolean,
@@ -23,11 +23,11 @@ export default {
     },
     dividerColor: {
       type: String,
-      default: "#bebcbc"
+      default: '#bebcbc'
     },
     dividerWidth: {
       type: String,
-      default: "100%"
+      default: '100%'
     },
     dividerBorderSize: {
       type: String,
@@ -35,15 +35,16 @@ export default {
     },
     dividerStyle: {
       type: String,
-      default: "solid"
+      default: 'solid'
     }
   }
-};
+}
 </script>
 
 <style lang="scss" scoped>
 .card {
   background: white;
+  border: 1px solid #dddfe2;
   border-radius: 5px;
   display: flex;
   flex-direction: column;

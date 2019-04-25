@@ -1,10 +1,13 @@
 <template>
-  <nav id="nav">
+  <nav id="nav" class="n-mb-5">
     <n-container>
       <n-layout>
         <n-flex>
           <div class="logo">
-            <img :src="logo" alt>
+            <img
+              :src="logo"
+              alt
+            >
           </div>
         </n-flex>
         <n-flex class="n-col-6 n-ma-auto">
@@ -18,28 +21,33 @@
 
 <script>
 export default {
-  name: "NHeader",
+  name: 'NHeader',
   computed: {
-    logo: function() {
-      return `${this.url}/img/logo.png`;
+    logo: function () {
+      return `${this.url}/img/logo.png`
     }
   }
-};
+}
 </script>
 
-<style lang="scss" scoped>
+<style
+  lang="scss"
+  scoped
+>
 #nav {
   background: #35ce8d;
   padding: 12px;
+  border-bottom: 1px solid #3c906c;
 }
+
 .logo {
   color: #fff;
   font-family: "Courier New", Courier, monospace;
   margin-left: 15px;
   width: 90px;
-  img{
+  img {
     width: 100%;
-  
+
   }
 }
 </style>
