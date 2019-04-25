@@ -1,4 +1,4 @@
-# m2galleryfront
+# Funny Story
 
 ## Project setup
 ```
